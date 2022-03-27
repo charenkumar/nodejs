@@ -31,13 +31,13 @@ CMD ["node", "app.js"]
 
 ### Running the demo nodejs app on your machine
 
-Step 1: Clone to repo
+Step 1: Clone to repository 
 
 ```
 git clone https://github.com/trulymittal/nodejs_dockerfile.git
 ```
 
-Step 2: cd into the repo
+Step 2: cd into the repository 
 
 ```
 cd nodejs_dockerfile
@@ -55,12 +55,3 @@ Step 4: Run the docker container from the image
 docker run -d -p 3000:3000 IMAGE_NAME
 ```
 
-Thats all you need to do, to run this basic example.
-
-## Authors
-
-- [**Truly Mittal**](https://trulymittal.com)
-
-## License
-
-This project is licensed under the MIT License.
