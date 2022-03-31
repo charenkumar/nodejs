@@ -130,22 +130,23 @@ select * from project.user; (Query-to check what is in the table)
 ```
 \d projedt.user (to check the table as shown below)
 ```
-
+```
                      Table "projedt.user"
    Column    |     Type      | Collation | Nullable | Default
 -------------+---------------+-----------+----------+---------
  name        | character(15) |           |          |
  dateofbirth | character(10) |           |          |
  active      | character(3)  |           |          |
- 
+ ```
 ```
 insert into projedt.user values('charen', '24-09-1997', 'yes');   (to insert values)
 ```
 ```
 select * from project.user; (to check what is in the table as shown below)
 ```
-  name       | dateofbirth | active
+```
+name       | dateofbirth | active
 -----------------+-------------+--------
  charen          | 24-09-1997  | yes
 (1 row)
-
+```
