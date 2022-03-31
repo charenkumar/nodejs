@@ -50,16 +50,30 @@ docker run -d -p 3000:3000 IMAGE_NAME
 ```
 
 Create a new directory - 
+```
 mkdir [folder name]
+```
 Enter (or change directory) into the created directory - 
+```
 cd [folder name]
+```
 Copy files from github - 
+```
 git clone [git repository web address]
+```
 Build the docker file - 
+```
 docker build -t [name] .
+```
 Run the docker file - 
+```
 docker run -it -p [free port:internal port] [name] 
+```
 Check docker image status - 
+```
 docker ps (or) docker ps -a
+```
 Access the web app from your browser - start browser - search - 
+```
 localhost:[free port given]
+```
