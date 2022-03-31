@@ -130,6 +130,7 @@ select * from project.user; (Query-to check what is in the table)
 ```
 \d projedt.user (to check the table as shown below)
 ```
+#output
 ```
                      Table "projedt.user"
    Column    |     Type      | Collation | Nullable | Default
@@ -144,6 +145,7 @@ insert into projedt.user values('charen', '24-09-1997', 'yes');   (to insert val
 ```
 select * from project.user; (to check what is in the table as shown below)
 ```
+#output
 ```
 name       | dateofbirth | active
 -----------------+-------------+--------
