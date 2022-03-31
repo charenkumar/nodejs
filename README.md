@@ -88,42 +88,59 @@ Sudo su -
 ```
 Pull postgres image from form dockerhub or local repository
 ```
+```
 docker pull postgres
+```
 ```
 Run docker image
 ```
+```
 docker run --name postgres-0 -e POSTGRES_PASSWORD=password -d -p 5432:5432 postgres
+```
 ```
 docker exec -it postgres-0 bash        (check using pwd and ls you will in root)
 ```
+```
 psql -U postgres
+```
 ```
 create database project;
 ```
+```
 \l
+```
 ```
 create  user with password ‘password’;
 ```
+```
 Drop database project; (to remove or delete)
+```
 ```
 \c project; (to root into created database and work in it)
 ```
+```
 create schema project; (to create a schema)
+```
 ```
 create table project.user(name CHAR(15), dateofbirth CHAR(10), active CHAR(3)); (to create a table with required no. of columns)
 ```
+```
 select * from project.user; (Query-to check what is in the table)
+```
 ```
 \d projedt.user (to check the table as shown below)
 ```
+
                      Table "projedt.user"
    Column    |     Type      | Collation | Nullable | Default
 -------------+---------------+-----------+----------+---------
  name        | character(15) |           |          |
  dateofbirth | character(10) |           |          |
  active      | character(3)  |           |          |
+ 
 ```
 insert into projedt.user values('charen', '24-09-1997', 'yes');   (to insert values)
+```
 ```
 select * from project.user; (to check what is in the table as shown below)
 ```
@@ -131,4 +148,4 @@ select * from project.user; (to check what is in the table as shown below)
 -----------------+-------------+--------
  charen          | 24-09-1997  | yes
 (1 row)
-```
+
