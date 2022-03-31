@@ -1,3 +1,4 @@
+```dockerfile
 # we will use the latest version of node available from the Docker Hub.
 FROM node:latest
 
